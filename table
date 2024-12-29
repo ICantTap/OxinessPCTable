@@ -1,0 +1,79 @@
+script_key="";
+getgenv().Oxiness = {
+    ["GunFov"] = { ['Enabled'] = true},
+    ["Resolver"] = { ['Enabled'] = false},
+    ["Spin"] = { ['Enabled'] = true, SpinSpeed = 4900, Degrees = 360, Keybind = Enum.KeyCode.V},
+    ["KOChecks"] = {
+        ['Wall'] = true,
+        ['Knocked'] = false,
+        ['DisableOnDeath'] = true,
+        ['DisableOutsideFov'] = false,
+        ['AntiGroundShots'] = true,
+    };
+    ["Fov"] = {
+        ['Oxiness'] = { -- FOV WONT SHOW UP USE AIMASSIST FOV
+            ['Visible'] = false,
+            ['Filled'] = true,
+            ['Size'] = 50,
+            ['Thickness'] = 2.5,
+            ['Transparency'] = 0.15,
+            ['Sides'] = 100,
+            ['Color'] = Color3.fromRGB(0, 0, 0)
+        };
+        ["AimAssist"] = { -- USE THIS FOV
+            ['Visible'] = true,
+            ['Filled'] = true,
+            ['Size'] = 40,
+            ['Thickness'] = 3,
+            ['Transparency'] = 0.25,
+            ['Sides'] = 100,
+            ['Color'] = Color3.fromRGB(255, 0, 0)
+        }
+    };
+    ["AimAssist"] = {
+        ['Enabled'] = true,
+        ['Keybind'] = 'q',
+        ['Predict'] = true,
+        ['Prediction'] = 0.129,
+        ['SmoothnessValue'] = 1,
+        ['Shake'] = false,
+        ['ShakeValue'] = 1,
+        ['Aimpart'] = 'Head',
+        ['NearestCursorAimpart'] = false
+    };
+    ["Textures"] = {
+        ['Enabled'] = false,
+        ['Material'] = Enum.Material.Brick,
+        ['Color'] = Color3.fromRGB(244, 244, 244)
+    };
+    ["Adjustment"] = {
+        ['Shake'] = false,
+        ['Smoothness'] = true,
+        ['AirShakeValue'] = 4,
+        ['AirSmoothnessValue'] = 0.9,
+        ['GroundShakeValue'] = 10,
+        ['GroundSmoothnessValue'] = 0.217
+    };
+    ["Oxiness"] = { -- SILENT AIM
+        ['Enabled'] = true,
+        ['UseKeybind'] = false,
+        ['Keybind'] = 'j',
+        ['Predict'] = true,
+        ['Prediction'] = 0.14633,
+        ['Aimpart'] = 'UpperTorso',
+        ['NearestCursorAimpart'] = false
+    };
+    ["Intro"] = {
+        ['Enabled'] = true,
+    };
+    ["Hitbox"] = { -- ONLY DA HOOD
+        ['Enabled'] = true, 
+        ['TargetPart'] = "HumanoidRootPart", -- ONLY HUMANOIDROOTPART
+        ['HitboxSize'] = 9,
+        ['Transparency'] = 1, -- 1 TO DONT SHOW
+        ["Color"] = BrickColor.new("Really red"), 
+        ['Material'] = Enum.Material.Neon, 
+    };
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ICantTap/OxinessPC/refs/heads/main/try%203-obfuscated%202.lua"))()
