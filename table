@@ -1,15 +1,24 @@
 script_key="";
 getgenv().Oxiness = {
+
+    ["Esp"] = {
+        ['Chams'] = true,
+        ['Key'] = Enum.KeyCode.T,
+        ['Color'] = Color3.fromRGB(10, 50, 10),
+        ['Outline'] = Color3.fromRGB(50, 50, 50)
+    }; 
+
     ["GunFov"] = { ['Enabled'] = true},
     ["Resolver"] = { ['Enabled'] = false},
     ["Spin"] = { ['Enabled'] = true, SpinSpeed = 4900, Degrees = 360, Keybind = Enum.KeyCode.V},
     ["KOChecks"] = {
-        ['Wall'] = true,
+        ['Wall'] = false,
         ['Knocked'] = false,
         ['DisableOnDeath'] = true,
         ['DisableOutsideFov'] = false,
         ['AntiGroundShots'] = true,
     };
+
     ["Fov"] = {
         ['Oxiness'] = { -- FOV WONT SHOW UP USE AIMASSIST FOV
             ['Visible'] = false,
@@ -20,40 +29,46 @@ getgenv().Oxiness = {
             ['Sides'] = 100,
             ['Color'] = Color3.fromRGB(0, 0, 0)
         };
+
+     
         ["AimAssist"] = { -- USE THIS FOV
             ['Visible'] = true,
             ['Filled'] = true,
-            ['Size'] = 40,
+            ['Size'] = 100,
             ['Thickness'] = 3,
             ['Transparency'] = 0.25,
             ['Sides'] = 100,
             ['Color'] = Color3.fromRGB(255, 0, 0)
         }
     };
+
     ["AimAssist"] = {
         ['Enabled'] = true,
         ['Keybind'] = 'q',
         ['Predict'] = true,
         ['Prediction'] = 0.129,
-        ['SmoothnessValue'] = 1,
+        ['SmoothnessValue'] = 0.9,
         ['Shake'] = false,
         ['ShakeValue'] = 1,
-        ['Aimpart'] = 'Head',
+        ['Aimpart'] = 'UpperTorso',
         ['NearestCursorAimpart'] = false
     };
+
     ["Textures"] = {
         ['Enabled'] = false,
         ['Material'] = Enum.Material.Brick,
         ['Color'] = Color3.fromRGB(244, 244, 244)
     };
+
     ["Adjustment"] = {
         ['Shake'] = false,
         ['Smoothness'] = true,
         ['AirShakeValue'] = 4,
         ['AirSmoothnessValue'] = 0.9,
-        ['GroundShakeValue'] = 10,
-        ['GroundSmoothnessValue'] = 0.217
+        ['GroundShakeValue'] = 0.81,
+        ['GroundSmoothnessValue'] = 0.7
     };
+
     ["Oxiness"] = { -- SILENT AIM
         ['Enabled'] = true,
         ['UseKeybind'] = false,
@@ -63,11 +78,20 @@ getgenv().Oxiness = {
         ['Aimpart'] = 'UpperTorso',
         ['NearestCursorAimpart'] = false
     };
+
     ["Intro"] = {
         ['Enabled'] = true,
     };
+
+    ["Cframe"] = {
+        ['Enabled'] = true,
+        ['Toggle'] = "H",
+        ['Multiplier'] = 0.5,
+        ['Speed'] = 2
+    };
+
     ["Hitbox"] = { -- ONLY DA HOOD
-        ['Enabled'] = true, 
+        ['Enabled'] = false, 
         ['TargetPart'] = "HumanoidRootPart", -- ONLY HUMANOIDROOTPART
         ['HitboxSize'] = 9,
         ['Transparency'] = 1, -- 1 TO DONT SHOW
@@ -76,4 +100,4 @@ getgenv().Oxiness = {
     };
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ICantTap/OxinessPC/refs/heads/main/try%203-obfuscated%202.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ICantTap/OxinessPC-/refs/heads/main/Protected_6463346421437255.lua.txt"))()
